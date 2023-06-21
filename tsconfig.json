@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
     "target": "es5",
     "module": "esnext",
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
   "include": [
-    "src", "**/*.ts", "**/*.tsx", "**/*.scss"
+    "src",
+    "**/*.ts",
+    "**/*.js",
+    "**/*.tsx",
+    "**/*.jsx",
+    "**/*.scss"
   ]
 }

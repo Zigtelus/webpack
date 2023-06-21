@@ -25,21 +25,11 @@ module.exports = {
         use: ["style-loader", "css-loader", "less-loader"]
       },
       {
-        test: /\.(jpg|jepeg|png|svg)/,
+        test: /\.(jpg|jpeg|png|svg)/,
         use: ["file-loader"]
       },
       {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      },
-      {
-        test: [/\.jsx$/, /\.tsx$/],
+        test: /\.m?js$|\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -47,7 +37,23 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
+      },
+      {
+        test: /\.m?ts$|\.tsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react', "@babel/preset-typescript"]
+            },
+          },
+          {
+            loader: "ts-loader"
+          }
+        ]
       }
+
     ]
   }
 }
