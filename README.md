@@ -1,3 +1,11 @@
+#ТЕХНОЛОГИИ
+React 16
+React-dom 16
+React-redux
+TypeScript
+Less
+
+#ЗАПУСК ПРОЕКТА через Docker
 создание образа
 docker build -t webpack_2 .
 
