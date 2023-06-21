@@ -12,11 +12,11 @@ class App extends React.Component <Props> {
 
   constructor(props: Props) {
     super(props);
-    this.hundleClick = this.hundleClick.bind(this);
+    this.hundleClickPlus = this.hundleClickPlus.bind(this);
     this.hundleClickMinus = this.hundleClickMinus.bind(this);
   }
 
-  hundleClick() {
+  hundleClickPlus() {
     console.log(this)
     this.props.increment()
   }
@@ -33,7 +33,7 @@ class App extends React.Component <Props> {
         <h1>star1t</h1>
         <h2>{this.props.first.counter}</h2>
         <button
-          onClick={this.hundleClick}
+          onClick={this.hundleClickPlus}
         >+</button>
         <button
           onClick={this.hundleClickMinus}
