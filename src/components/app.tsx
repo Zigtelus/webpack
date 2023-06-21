@@ -30,7 +30,7 @@ class App extends React.Component <Props> {
     console.log(this);
     return (
       <div className="first">
-        <h1>start</h1>
+        <h1>star1t</h1>
         <h2>{this.props.first.counter}</h2>
         <button
           onClick={this.hundleClick}
