@@ -1,15 +1,14 @@
-#ТЕХНОЛОГИИ
-<br>
-React 16
-React-dom 16
-React-redux
-TypeScript
-Less
+#ТЕХНОЛОГИИ <br>
+React 16 <br>
+React-dom 16 <br>
+React-redux <br>
+TypeScript <br>
+Less <br>
 
-#ЗАПУСК ПРОЕКТА через Docker
-создание образа
-docker build -t webpack_2 .
+#ЗАПУСК ПРОЕКТА через Docker <br>
+создание образа <br>
+docker build -t webpack_2 . <br>
 
-запуск на 8080 порту.
-docker run -p 8080:{{тут указывается номер порта из wbpack.config}} {{id_container}}
+запуск на 8080 порту. <br>
+docker run -p 8080:{{тут указывается номер порта из wbpack.config}} {{id_container}} <br>
 docker run -p 8080:8080 webpack_1 - пример
