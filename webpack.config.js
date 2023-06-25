@@ -15,7 +15,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({template: "./src/index.html"}),
-    new CleanWebpackPlugin() //чистит папку перед создание новой сборки (в данном случае папку dist)
+    new CleanWebpackPlugin() //чистит папку перед создание новой сборки (в данном случае папку dist),
+    
   ],
   module: {
     rules: [

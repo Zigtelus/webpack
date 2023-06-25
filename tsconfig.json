@@ -5,15 +5,9 @@
     "jsx": "react", //указывает на синтаксис jsx
     "strict": true, //включает строгий режим
     "esModuleInterop": true, //указывает на использование exports import из ES6
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   },
   "include": [ //какие файлы и папки должны быть включены в процесс компиляции TypeScript
-    "src",
-    "**/*.ts",
-    "**/*.js",
-    "**/*.tsx",
-    "**/*.jsx",
-    "**/*.scss",
-    "tsxfile.d.ts"
+    "src"
   ]
 }

@@ -1,8 +1,11 @@
-import { createStore, Store } from 'redux';
 
+
+export interface AppState {
+  counter: number;
+}
 
 // Определение начального состояния
-const initialState = {
+const initialState: AppState = {
   counter: 0
 };
 
@@ -18,8 +21,4 @@ const reducer = (state = initialState, action: any) => {
   }
 };
 
-// Создание хранилища
-const store = createStore(reducer);
-
-
-export default store;
+export default reducer;
