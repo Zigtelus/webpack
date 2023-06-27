@@ -1,14 +1,9 @@
 import React from "react";
-// @ts-ignore
 import Counter from "../components/counter/index.tsx";
-// @ts-ignore
 import Name from "../components/name/index.tsx";
-// @ts-ignore
 import Rikmorty from "../components/rikmorty/index.tsx";
-// @ts-ignore
 import Main from "./main/index.tsx";
 import { Route, Routes } from "react-router-dom";
-// @ts-ignore
 import Header from "./header/index.tsx";
 
 

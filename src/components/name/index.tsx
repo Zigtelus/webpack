@@ -1,6 +1,5 @@
 import React, { RefObject } from "react";
 import { connect } from "react-redux";
-// @ts-ignore
 import { heroNameAction } from "../../redux/name/name.actions.ts";
 
 type Props = {

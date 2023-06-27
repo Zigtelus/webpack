@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 // import { RootState } from "../../redux";
 import { RootState } from "../../redux";
-// @ts-ignore
 import { loadData } from "../../redux/rikmorty/rikmorty.action.ts";
 
 type Props = {
