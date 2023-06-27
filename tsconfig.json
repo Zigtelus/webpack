@@ -6,6 +6,8 @@
     "strict": true, //включает строгий режим
     "esModuleInterop": true, //указывает на использование exports import из ES6
     "moduleResolution": "node",
+    "allowImportingTsExtensions": true, //позволяет импортировать модули с расширениями .ts или .tsx
+    "noEmit": true //компилятор только проверит синтаксис и типы, но не создаст выходные файлы
   },
   "include": [ // какие файлы и папки должны быть включены в процесс компиляции TypeScript
     "src"

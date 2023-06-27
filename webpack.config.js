@@ -51,7 +51,10 @@ module.exports = {
             }
           },
           {
-            loader: 'ts-loader'
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true // загрузчик TypeScript выполняет только транспиляцию кода в JavaScript, но не проверяет его на ошибки типов
+            }
           }
         ]
       }
