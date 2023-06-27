@@ -12,7 +12,7 @@ type Props = {
   characters: string[];
 };
 
-class Rikmorty extends React.Component <Props> {
+class Rikmorty extends React.Component<Props> {
 
   constructor(props: Props) {
     super(props);
@@ -27,7 +27,7 @@ class Rikmorty extends React.Component <Props> {
     const { characters, targetCharacter } = this.props;
     const { hundleFetch } = this;
 
-    const character: any = characters.find((character: any) => 
+    const character: any = characters.find((character: any) =>
       character.name === targetCharacter)
 
     return <div>
@@ -38,18 +38,18 @@ class Rikmorty extends React.Component <Props> {
 
       {
         !!targetCharacter &&
-        <div style={{margin: '10px 0'}}>
-          { 
-            !!character ? 
-            character.name : 
-            'не найдено' 
+        <div style={{ margin: '10px 0' }}>
+          {
+            !!character ?
+              character.name :
+              'не найдено'
           }
         </div>
       }
 
       {
         characters.map((hero: any, index) => <div key={index}>
-          { hero.name }
+          {hero.name}
         </div>)
       }
 

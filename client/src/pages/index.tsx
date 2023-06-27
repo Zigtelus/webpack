@@ -1,10 +1,10 @@
 import React from "react";
 // @ts-ignore
-import Counter from "./counter/index.tsx";
+import Counter from "../components/counter/index.tsx";
 // @ts-ignore
-import Name from "./name/index.tsx";
+import Name from "../components/name/index.tsx";
 // @ts-ignore
-import Rikmorty from "./rikmorty/index.tsx";
+import Rikmorty from "../components/rikmorty/index.tsx";
 // @ts-ignore
 import Main from "./main/index.tsx";
 import { Route, Routes } from "react-router-dom";

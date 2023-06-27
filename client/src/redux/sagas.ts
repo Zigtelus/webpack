@@ -6,7 +6,7 @@ import { putData } from './rikmorty/rikmorty.action.ts';
 
 function fetchData() {
   return fetch('https://rickandmortyapi.com/api/character')
-  .then(response => response.json())
+    .then(response => response.json())
 }
 
 function* workerLoadData(): any {
