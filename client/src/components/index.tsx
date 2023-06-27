@@ -8,13 +8,15 @@ import Rikmorty from "./rikmorty/index.tsx";
 // @ts-ignore
 import Main from "./main/index.tsx";
 import { Route, Routes } from "react-router-dom";
+// @ts-ignore
+import Header from "./header/index.tsx";
 
 
 class App extends React.Component {
 
   render() {
     return <div>
-      <div>header</div>
+      <Header />
 
       <Main>
         <Routes>
