@@ -8,7 +8,7 @@ type Props = {
   increment: (data: any) => void;
 };
 
-class Name extends React.Component <Props> {
+class Name extends React.Component<Props> {
   private myRef: RefObject<HTMLInputElement>;
 
   constructor(props: Props) {
@@ -26,14 +26,14 @@ class Name extends React.Component <Props> {
 
     return <div>
       <h2>Name</h2>
-      <input 
+      <input
         style={{ width: '200px' }}
         placeholder="введите полное имя героя"
         ref={myRef}
         type="text"
       />
-      <button 
-        onClick={ hundlePlusString }
+      <button
+        onClick={hundlePlusString}
       >string +</button>
     </div>
   }
@@ -41,7 +41,7 @@ class Name extends React.Component <Props> {
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
-    increment: (value: string) => 
+    increment: (value: string) =>
       dispatch(heroNameAction(value)),
   };
 };

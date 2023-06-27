@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+// import { RootState } from "../../redux";
 import { RootState } from "../../redux";
 // @ts-ignore
 import { loadData } from "../../redux/rikmorty/rikmorty.action.ts";
@@ -11,7 +12,7 @@ type Props = {
   characters: string[];
 };
 
-class Rikmorty extends React.Component <Props> {
+class Rikmorty extends React.Component<Props> {
 
   constructor(props: Props) {
     super(props);
@@ -26,8 +27,8 @@ class Rikmorty extends React.Component <Props> {
     const { characters, targetCharacter } = this.props;
     const { hundleFetch } = this;
 
-    const character: any = characters.find((character: any) => 
-      character.name === targetCharacter);
+    const character: any = characters.find((character: any) =>
+      character.name === targetCharacter)
 
     return <div>
 
@@ -37,18 +38,18 @@ class Rikmorty extends React.Component <Props> {
 
       {
         !!targetCharacter &&
-        <div style={{margin: '10px 0'}}>
-          { 
-            !!character ? 
-            character.name : 
-            'не найдено' 
+        <div style={{ margin: '10px 0' }}>
+          {
+            !!character ?
+              character.name :
+              'не найдено'
           }
         </div>
       }
 
       {
-        characters.map((hero: any) => <div>
-          { hero.name }
+        characters.map((hero: any, index) => <div key={index}>
+          {hero.name}
         </div>)
       }
 

@@ -3,7 +3,7 @@ import './index.less';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 // @ts-ignore
-import App from './components/app.tsx';
+import App from './pages/index.tsx';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 import logger from 'redux-logger';

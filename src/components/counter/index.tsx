@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Dispatch } from "react";
 import { connect } from "react-redux";
-import {RootState } from "../../redux";
+import { RootState } from "../../redux";
 // @ts-ignore
 import { counterAction } from "../../redux/counter/counter.action.ts";
 
@@ -11,7 +11,7 @@ type Props = {
   first: number;
 };
 
-class Counter extends React.Component <Props> {
+class Counter extends React.Component<Props> {
 
   constructor(props: Props) {
     super(props);
