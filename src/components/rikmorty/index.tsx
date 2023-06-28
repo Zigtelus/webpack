@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-// import { RootState } from "../../redux";
 import { RootState } from "../../redux";
 import { loadData } from "../../redux/rikmorty/rikmorty.action.ts";
 

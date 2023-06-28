@@ -1,6 +1,6 @@
 import React, { RefObject } from "react";
-import { connect } from "react-redux";
 import { heroNameAction } from "../../redux/name/name.actions.ts";
+import { connect } from "react-redux";
 
 type Props = {
   // свойства Props
@@ -17,7 +17,7 @@ class Name extends React.Component<Props> {
   }
 
   hundlePlusString() {
-    this.props.increment(this.myRef.current?.value)
+    this.props.increment(this.myRef.current?.value);
   }
 
   render() {

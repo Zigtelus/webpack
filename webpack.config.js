@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development', // режим разработки, который подключает локальный сервер автоматически и обновляет страницу при изменении кода
   entry: [
-    '@babel/polyfill', './src/index.tsx' // входящий файл
+    '@babel/polyfill',
+    './src/index.tsx' // входящий файл
   ],
   devtool: 'eval-source-map', // показывает ошибки в компонентах, а не в компилированном коде
   output: {
