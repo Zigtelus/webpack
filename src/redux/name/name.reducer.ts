@@ -1,4 +1,3 @@
-
 export interface AppStateString {
   string: string;
 }

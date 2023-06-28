@@ -1,7 +1,9 @@
-import React, { Dispatch } from "react";
+import React from "react";
 import { connect } from "react-redux";
+
 import { RootState } from "../../redux";
 import { counterAction } from "../../redux/counter/counter.action.ts";
+
 
 type Props = {
   // свойства Props

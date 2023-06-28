@@ -1,9 +1,10 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+
 import Counter from "../components/counter";
 import Name from "../components/name";
 import Rikmorty from "../components/rikmorty";
 import Main from "./main";
-import { Route, Routes } from "react-router-dom";
 import Header from "./header";
 
 

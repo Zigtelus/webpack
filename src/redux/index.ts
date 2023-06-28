@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+
 import ReducerCount, { AppState } from './counter/counter.reducer.ts';
 import ReducerStringer, { AppStateString } from './name/name.reducer.ts';
 import ReducerRikmorty, { initialStateRikMorty } from './rikmorty/rikmorty.reducer.ts';
