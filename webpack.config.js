@@ -8,6 +8,9 @@ module.exports = {
     '@babel/polyfill',
     './src/index.tsx' // входящий файл
   ],
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'] // позволяет импортировать index файлы из файла без указания index, а только название компонента/файла
+  },
   devtool: 'eval-source-map', // показывает ошибки в компонентах, а не в компилированном коде
   output: {
     path: path.resolve(__dirname, 'dist'), // куда сохраняется файл при сборке

@@ -1,10 +1,10 @@
 import React from "react";
-import Counter from "../components/counter/index.tsx";
-import Name from "../components/name/index.tsx";
-import Rikmorty from "../components/rikmorty/index.tsx";
-import Main from "./main/index.tsx";
+import Counter from "../components/counter";
+import Name from "../components/name";
+import Rikmorty from "../components/rikmorty";
+import Main from "./main";
 import { Route, Routes } from "react-router-dom";
-import Header from "./header/index.tsx";
+import Header from "./header";
 
 
 class App extends React.Component {
