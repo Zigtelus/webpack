@@ -17,7 +17,7 @@ module.exports = {
     filename: '[name].[hash].js' // гарантирует уникальное название файла при сборке, что бы избежать хэширования
   },
   devServer: {
-    port: 8090,
+    port: 8091,
     historyApiFallback: true
   },
   plugins: [

@@ -10,8 +10,11 @@ Less <br>
 
 #ЗАПУСК ПРОЕКТА через Docker <br>
 создание образа <br>
-docker build -t webpack_2 . <br>
+docker build -t webpack_1 . <br>
 
 запуск на 8080 порту. <br>
 docker run -p 8080:{{тут указывается номер порта из wbpack.config}} {{id_container}} <br>
-docker run -p 8080:8080 webpack_1 - пример
+docker run -p 8080:8091 webpack_1 - пример
+
+открываете ссылку:
+http://localhost:8080/

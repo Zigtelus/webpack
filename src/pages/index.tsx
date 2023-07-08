@@ -1,38 +1,28 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { withRouter, RouteComponentProps, Switch, Route } from "react-router-dom";
 
-import Counter from "../components/counter";
-import Name from "../components/name";
-import Rikmorty from "../components/rikmorty";
 import Main from "./main";
 import Header from "./header";
+import Reviews from "../components/reviews";
 
+interface Props extends RouteComponentProps { }
 
-class App extends React.Component {
-
+class App extends React.Component<Props> {
   render() {
-    return <div>
-      <Header />
+    return (
+      <div>
+        <Header />
 
-      <Main>
-        <Routes>
-          <Route path={'/first'} element={<Counter />} />
-          <Route path={'/second'} element={
-            <div>
-              <React.Fragment>
-                <Name />
-                <Rikmorty />
-              </React.Fragment>
-            </div>}
-          />
-        </Routes>
-      </Main>
-
-      <div>footer</div>
-    </div>
+        <Main>
+          <Switch>
+            <Route exact path="/" component={Reviews} />
+            <Route path="/:id" component={Reviews} />
+          </Switch>
+        </Main>
+      </div>
+    );
   }
 }
 
-
-
-export default App;
+const AppWithRouter = withRouter(App);
+export default AppWithRouter;
