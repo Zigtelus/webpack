@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, RouteComponentProps, Switch, withRouter } from "react-router-dom";
 
 import Counter from "../components/counter";
 import Name from "../components/name";
@@ -8,7 +8,10 @@ import Main from "./main";
 import Header from "./header";
 
 
-class App extends React.Component {
+interface Props extends RouteComponentProps { //необходимо указать для корректной работы withRouter с TS
+}
+
+class App extends React.Component<Props> {
 
   render() {
     return <div>
@@ -16,7 +19,9 @@ class App extends React.Component {
 
       <Main>
         <Switch>
-          <Route path={'/first'} component={Counter} />
+          <Route exact path={'/first'} component={Counter} />
+          <Route path={'/first/:id'} render={() => <div> page with ID</div>} />
+
           <Route path={'/second'} render={() =>
             <div>
               <React.Fragment>
@@ -35,4 +40,4 @@ class App extends React.Component {
 
 
 
-export default App;
+export default withRouter(App);
